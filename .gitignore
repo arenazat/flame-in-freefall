@@ -19,12 +19,5 @@ captures
 node_modules/
 
 # Project exclude paths
-/androidApp/
-/desktopApp/
-/gradle/
-/ingestion/
-/kotlin-js-store/
-/shared/
-/supabase/
-/webApp/
 .wrangler/
+supabase/.temp/
