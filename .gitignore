@@ -27,3 +27,4 @@ node_modules/
 /shared/
 /supabase/
 /webApp/
+.wrangler/

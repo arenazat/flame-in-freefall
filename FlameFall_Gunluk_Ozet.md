@@ -389,7 +389,19 @@ CREATE POLICY "Allow insert on reports"
 
 ---
 
-## 15. Sıradaki Adımlar
+## 15. Masaüstü Uygulaması (Desktop App — FlameFall.exe)
+
+- **Giriş Noktası & DI Bağlantısı (`desktopApp/src/main/kotlin/org/example/project/main.kt`):**
+  - Masaüstü başlatıcısına `initKoin()` entegre edildi.
+  - Pencere başlığı `"Flame in Freefall — NASA Microgravity Lab"` olarak yapılandırıldı.
+- **Dağıtılabilir .exe Çıktısı (`desktopApp/build/compose/binaries/main/app/FlameFall/`):**
+  - `.\gradlew.bat :desktopApp:createDistributable` komutuyla bağımsız Windows dağıtımı derlendi.
+  - Çalıştırılabilir dosya: `desktopApp\build\compose\binaries\main\app\FlameFall\FlameFall.exe` (563 KB + gömülü JVM runtime).
+  - Kullanıcının sisteminde Java kurulu olmasa dahi doğrudan çift tıklanarak çalışabilir.
+
+---
+
+## 16. Sıradaki Adımlar
 
 1. **Web Dashboard'un Canlı Önizlemesi:**
    - `.\gradlew.bat :webApp:wasmJsBrowserDevelopmentRun` ile Compose Wasm web dashboard'un tarayıcıda canlı açılması ve test edilmesi.
